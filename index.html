@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ed Hayter Website</title>
+    <script
+      type="module"
+      src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>Edward Hayter</h1>
+      <p>Analytics Consultant</p>
+    </header>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>[Brief introduction about yourself]</p>
+      <p>[Your background, education, and professional experience]</p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-item">
+        <h3>Expert Minesweeper Dashboard</h3>
+        <p>
+          Tableau Dashboard that replicates the functionality of Tableau
+          Minesweeper
+        </p>
+        <div class="content">
+          <tableau-viz
+            id="tableauviz"
+            src="https://public.tableau.com/views/Superstore_embedded_800x800/Overview"
+            toolbar=""
+            height="100vh"
+            width="100vw"
+          >
+          </tableau-viz>
+        </div>
+        <a
+          href="https://public.tableau.com/views/ExpertMinesweeper/Minesweeper?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link"
+          >View Project</a
+        >
+      </div>
+      <!-- Repeat .portfolio-item for more projects -->
+      <script src="app.js"></script>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:[your.email@example.com]">[your.email@example.com]</a>
+      </p>
+      <p>LinkedIn: <a href="[your LinkedIn profile]">[Your LinkedIn]</a></p>
+      <p>GitHub: <a href="[your GitHub profile]">[Your GitHub]</a></p>
+    </section>
+
+    <footer>
+      <p>2024 Ed Hayter. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
